@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo7"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuning"
+            android:textAlignment="center"
+            android:textColor="@color/azul"
+            android:textSize="34sp" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/chkRines"
+            android:text="Rines :      1000$"></CheckBox>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/chkSonido"
+            android:text="Sonido :      1000$"></CheckBox>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/chkPolarizado"
+            android:text="Polarizado :      1000$"></CheckBox>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/chkAleron"
+            android:text="Alerones :      1000$"></CheckBox>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/chkLlanta"
+            android:text="Llantas :      1000$"></CheckBox>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipos de vehiculos"
+            android:textAlignment="center"
+            android:textColor="@color/azul"
+            android:textSize="34sp" />
+
+
+        <RadioGroup
+            android:id="@+id/rgOpciones"
+            android:layout_width="100dp"
+            android:layout_height="250dp">
+
+
+            <RadioButton
+                android:id="@+id/rbSedan"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Sedan"></RadioButton>
+            <RadioButton
+                android:id="@+id/rbSuv"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Camion"></RadioButton>
+            <RadioButton
+                android:id="@+id/rbCoupe"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Coupe"></RadioButton>
+            <RadioButton
+                android:id="@+id/rbCrossover"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Crossover"></RadioButton>
+            <RadioButton
+                android:id="@+id/rbMinivan"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Minivan"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCobrar"
+        android:layout_width="191dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Factura"
+        android:backgroundTint="@color/azul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
