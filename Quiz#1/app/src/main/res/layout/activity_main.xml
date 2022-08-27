@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:id="@+id/txtnumero"
+        android:inputType="number"></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Generar"
+        android:textColor="@color/white"
+        android:id="@+id/btngenerar"></Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Intentos"
+            android:textColor="@color/black"
+            android:id="@+id/txtintentos"
+            android:textSize="20sp"></TextView>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="200dp"
+            android:backgroundTint="@color/black"
+            android:id="@+id/btnintentos"
+            android:text="0"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Puntos"
+            android:textColor="@color/black"
+            android:id="@+id/txtpuntos"
+            android:textSize="20sp"></TextView>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="200dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="0"
+            android:id="@+id/btnpuntos"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/black"
+        android:text="Reset"
+        android:id="@+id/btnreset"
+        android:textColor="@color/white"></Button>
+
+</LinearLayout>
