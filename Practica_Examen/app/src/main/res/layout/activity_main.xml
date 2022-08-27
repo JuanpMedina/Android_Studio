@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa un numero"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:id="@+id/txtnumero"
+        android:inputType="number"></EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero aleatorio"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/txtaleatorio"></TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Ganador"
+        android:textColor="@color/white"
+        android:id="@+id/btnganador"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Puntos"
+        android:textColor="@color/white"
+        android:id="@+id/btnpuntos"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Oportunidades"
+        android:textColor="@color/white"
+        android:id="@+id/btnoportunidades"></Button>
+
+
+
+</LinearLayout>
